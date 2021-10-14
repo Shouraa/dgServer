@@ -21,9 +21,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/users', usersRouter);
 
-// app.get('/', (req, res) => {
-//   res.send('Welcome to the app API');
-// });
+app.get('/', (req, res) => {
+  res.send('Welcome to the app API');
+});
 
 console.log(process.env.MONGODB_URI);
 
