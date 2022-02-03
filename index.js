@@ -28,7 +28,7 @@ app.use('/api/users', usersRouter);
 console.log(process.env.MONGODB_URI);
 
 const MONGODB_URI =
-  'mongodb+srv://fullstack:farhangkuni@cluster0.cjkmw.mongodb.net/thesis-app?retryWrites=true&w=majority';
+  'mongodb+srv://fullstack:@cluster0.cjkmw.mongodb.net/thesis-app?retryWrites=true&w=majority';
 
 mongoose
   .connect(MONGODB_URI, {
